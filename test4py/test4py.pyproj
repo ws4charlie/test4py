@@ -1,0 +1,133 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>14f56971-23da-48c9-ba24-8c8303641236</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>201-1200\588_inmemory_file_system.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>test4py</Name>
+    <RootNamespace>test4py</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="01-20\03_longest_substring_without_repeat_char.py" />
+    <Compile Include="01-20\05_longest_palindromic_substring.py" />
+    <Compile Include="01-20\06_ZigZag_conversion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01-20\07_reverse_integer.py" />
+    <Compile Include="01-20\09_palindrome_number.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01-20\11_container_with_most_water.py" />
+    <Compile Include="01-20\12_integer_to_roman.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01-20\13_roman_to_int.py" />
+    <Compile Include="01-20\14_longest_common_prefix.py" />
+    <Compile Include="01-20\15_3Sum.py" />
+    <Compile Include="01-20\17_letter_comb_phone_number.py" />
+    <Compile Include="01-20\19_remove_Nth_node_from_end_of_list.py" />
+    <Compile Include="01-20\20_valid_parentheses.py" />
+    <Compile Include="201-1200\588_inmemory_file_system.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="201-1200\buysell.py" />
+    <Compile Include="21-200\48_rotate_image.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\21_merge_two_sorted_list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\22_generage_parentheses.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\26_remove_duplicates_from_sorted_array.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\28_implement_strStr.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\29_divide_two_integers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\33_search_in_rotated_sorted_array.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\34_find_first_and_last_position_of_element_in_sorted_array.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\38_count_and_say.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="201-1200\168_excel_sheet_column_title.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\41_first_missing_positive.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\49_group_anagrams.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\53_maximum_subarray%28Kadane-Algorithm%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="21-200\54_spiral_matrix.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="coffee_machine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dynamic_program\1306_jump_game_III.py" />
+    <Compile Include="dynamic_program\45_jump_game_II.py" />
+    <Compile Include="dynamic_program\45_jump_gami_II.py" />
+    <Compile Include="dynamic_program\55_jump_gamp.py" />
+    <Compile Include="dynamic_program\Fibonacci.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dynamic_program\longest_subseq_DP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sort_and_trees\find.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sort_and_trees\binary_tree.py" />
+    <Compile Include="sort_and_trees\graph.py" />
+    <Compile Include="sort_and_trees\hanoi.py" />
+    <Compile Include="sort_and_trees\heap.py" />
+    <Compile Include="01-20\02_add_two_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sort_and_trees\sort.py" />
+    <Compile Include="test4py.py" />
+    <Compile Include="01-20\01_two_sum.py" />
+    <Compile Include="21-200\36_valid_sudoku.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="01-20\" />
+    <Folder Include="21-200\" />
+    <Folder Include="201-1200\" />
+    <Folder Include="dynamic_program\" />
+    <Folder Include="sort_and_trees\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
