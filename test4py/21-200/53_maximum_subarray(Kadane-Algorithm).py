@@ -1,3 +1,4 @@
+from typing import List
 
 # https://leetcode.com/problems/maximum-subarray/
 

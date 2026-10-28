@@ -53,11 +53,9 @@ class Solution2:
         return res
 
 if __name__ == "__main__":
-    sln1 = Solution1()
+    sln1 = Solution1_Top_Bottom()
     sln2 = Solution2()
-    sln3 = Solution1_memo()
     nums = [1,5,3,4,6,9,7,8]
     res1 = sln1.longestIncSeq(nums)
     res2 = sln2.longestIncSeq(nums)
-    res3 = sln3.longestIncSeq(nums)
-    print(res)
+    print(res1, res2)

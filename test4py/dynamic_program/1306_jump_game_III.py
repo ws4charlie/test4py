@@ -1,3 +1,4 @@
+from typing import List
 
 # https://leetcode.com/problems/jump-game-iii/
 
@@ -64,6 +65,6 @@ class Solution_Topdown:
         return self.reach(arr, start, mem, seen)
    
 if __name__ == "__main__":
-    sln = Solution()
+    sln = Solution_Topdown()
     arr = [4,2,3,0,3,1,2]
-    res = sln.canReach(arr)
+    res = sln.canReach(arr, 5)
