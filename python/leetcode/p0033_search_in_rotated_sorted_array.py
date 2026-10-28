@@ -1,3 +1,34 @@
+"""
+33. Search in Rotated Sorted Array  (Medium)
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+nums was sorted in ascending order with distinct values, then possibly
+rotated left by an unknown k (1 <= k < n):
+
+    sorted:   0 1 2 4 5 6 7
+    rotated:  4 5 6 7 0 1 2      (k = 3)
+
+Return the index of target in nums, or -1 if it isn't there. The solution
+must run in O(log n) time.
+
+Example 1:
+    Input:  nums = [4,5,6,7,0,1,2], target = 0
+    Output: 4
+
+Example 2:
+    Input:  nums = [4,5,6,7,0,1,2], target = 3
+    Output: -1
+
+Example 3:
+    Input:  nums = [1], target = 0
+    Output: -1
+
+Constraints:
+    1 <= nums.length <= 5000
+    -10^4 <= nums[i], target <= 10^4
+    All values of nums are distinct.
+    nums is an ascending array that may have been rotated.
+"""
 
 class Solution:
     def bs(self, nums, i, j, target) -> int:

@@ -1,5 +1,29 @@
+"""
+49. Group Anagrams  (Medium)
+https://leetcode.com/problems/group-anagrams/
+
+Group the strings that are anagrams of each other (same letters, any
+order). Return the groups in any order.
+
+Example 1:
+    Input:  strs = ["eat","tea","tan","ate","nat","bat"]
+    Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+Example 2:
+    Input:  strs = [""]
+    Output: [[""]]
+
+Example 3:
+    Input:  strs = ["a"]
+    Output: [["a"]]
+
+Constraints:
+    1 <= strs.length <= 10^4
+    0 <= strs[i].length <= 100
+    strs[i] consists of lowercase English letters.
+"""
+
 from typing import List
-# https://leetcode.com/problems/group-anagrams/
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:

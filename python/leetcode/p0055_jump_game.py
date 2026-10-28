@@ -1,6 +1,27 @@
-from typing import List
+"""
+55. Jump Game  (Medium)
+https://leetcode.com/problems/jump-game/
 
-# https://leetcode.com/problems/jump-game/
+You start at index 0. nums[i] is the longest jump you can make from index
+i (any length from 0 to nums[i]). Return True if you can reach the last
+index.
+
+Example 1:
+    Input:  nums = [2,3,1,1,4]
+    Output: True
+    Explanation: jump 1 step to index 1, then 3 steps to the last index.
+
+Example 2:
+    Input:  nums = [3,2,1,0,4]
+    Output: False
+    Explanation: every path lands on index 3, whose jump length is 0.
+
+Constraints:
+    1 <= nums.length <= 10^4
+    0 <= nums[i] <= 10^5
+"""
+
+from typing import List
 
 class Solution_brute_force:
     def back_trace(self, nums, pos):
