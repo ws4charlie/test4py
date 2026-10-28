@@ -7,31 +7,34 @@ python/
   leetcode/   pNNNN_<slug>.py
   basics/     sorting, heap, tree traversal, graph, ...
   misc/       interview questions and scratch code
-go/           (coming soon) same layout, one package per problem
+go/
+  leetcode/   pNNNN_<slug>/solution.go + solution_test.go (one package per problem)
 ```
+
+Run the Go tests: `cd go && go test ./...`
 
 ## LeetCode
 
 | #    | Problem | Tags | Python | Go |
 |------|---------|------|--------|----|
-| 1    | [Two Sum](https://leetcode.com/problems/two-sum/) | hash | [py](python/leetcode/p0001_two_sum.py) | |
+| 1    | [Two Sum](https://leetcode.com/problems/two-sum/) | hash | [py](python/leetcode/p0001_two_sum.py) | [go](go/leetcode/p0001_two_sum/solution.go) |
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | linked list | [py](python/leetcode/p0002_add_two_numbers.py) | |
-| 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | sliding window, hash | [py](python/leetcode/p0003_longest_substring_without_repeating_characters.py) | |
-| 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | string, expand around center | [py](python/leetcode/p0005_longest_palindromic_substring.py) | |
+| 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | sliding window, hash | [py](python/leetcode/p0003_longest_substring_without_repeating_characters.py) | [go](go/leetcode/p0003_longest_substring_without_repeating_characters/solution.go) |
+| 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | string, expand around center | [py](python/leetcode/p0005_longest_palindromic_substring.py) | [go](go/leetcode/p0005_longest_palindromic_substring/solution.go) |
 | 6    | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | string, simulation | [py](python/leetcode/p0006_zigzag_conversion.py) | |
 | 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | math | [py](python/leetcode/p0007_reverse_integer.py) | |
 | 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | math, two pointers | [py](python/leetcode/p0009_palindrome_number.py) | |
-| 11   | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | two pointers | [py](python/leetcode/p0011_container_with_most_water.py) | |
+| 11   | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | two pointers | [py](python/leetcode/p0011_container_with_most_water.py) | [go](go/leetcode/p0011_container_with_most_water/solution.go) |
 | 12   | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | math, greedy | [py](python/leetcode/p0012_integer_to_roman.py) | |
 | 13   | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | hash, string | [py](python/leetcode/p0013_roman_to_integer.py) | |
-| 14   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | string | [py](python/leetcode/p0014_longest_common_prefix.py) | |
-| 15   | [3Sum](https://leetcode.com/problems/3sum/) | sort, two pointers | [py](python/leetcode/p0015_3sum.py) | |
+| 14   | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | string | [py](python/leetcode/p0014_longest_common_prefix.py) | [go](go/leetcode/p0014_longest_common_prefix/solution.go) |
+| 15   | [3Sum](https://leetcode.com/problems/3sum/) | sort, two pointers | [py](python/leetcode/p0015_3sum.py) | [go](go/leetcode/p0015_3sum/solution.go) |
 | 17   | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | backtracking | [py](python/leetcode/p0017_letter_combinations_of_a_phone_number.py) | |
 | 19   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | linked list, two pointers | [py](python/leetcode/p0019_remove_nth_node_from_end_of_list.py) | |
-| 20   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | stack | [py](python/leetcode/p0020_valid_parentheses.py) | |
+| 20   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | stack | [py](python/leetcode/p0020_valid_parentheses.py) | [go](go/leetcode/p0020_valid_parentheses/solution.go) |
 | 21   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | linked list | [py](python/leetcode/p0021_merge_two_sorted_lists.py) | |
 | 22   | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | backtracking | [py](python/leetcode/p0022_generate_parentheses.py) | |
-| 26   | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | two pointers | [py](python/leetcode/p0026_remove_duplicates_from_sorted_array.py) | |
+| 26   | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | two pointers | [py](python/leetcode/p0026_remove_duplicates_from_sorted_array.py) | [go](go/leetcode/p0026_remove_duplicates_from_sorted_array/solution.go) |
 | 28   | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | string | [py](python/leetcode/p0028_implement_strstr.py) | |
 | 29   | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | math, bit | [py](python/leetcode/p0029_divide_two_integers.py) | |
 | 33   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | binary search | [py](python/leetcode/p0033_search_in_rotated_sorted_array.py) | |
