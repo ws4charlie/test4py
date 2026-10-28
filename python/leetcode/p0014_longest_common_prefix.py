@@ -1,4 +1,23 @@
-# https://leetcode.com/problems/longest-common-prefix/
+"""
+14. Longest Common Prefix  (Easy)
+https://leetcode.com/problems/longest-common-prefix/
+
+Return the longest string that every string in strs starts with, or ""
+if there is none.
+
+Example 1:
+    Input:  strs = ["flower","flow","flight"]
+    Output: "fl"
+
+Example 2:
+    Input:  strs = ["dog","racecar","car"]
+    Output: ""
+
+Constraints:
+    1 <= strs.length <= 200
+    0 <= strs[i].length <= 200
+    strs[i] consists of lowercase English letters (if non-empty).
+"""
 
 class Solution:
     def longestCommonPrefix(self, strs) -> str:

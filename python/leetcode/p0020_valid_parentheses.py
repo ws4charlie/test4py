@@ -1,4 +1,37 @@
-# https://leetcode.com/problems/valid-parentheses/
+"""
+20. Valid Parentheses  (Easy)
+https://leetcode.com/problems/valid-parentheses/
+
+s contains only the characters '(', ')', '[', ']', '{' and '}'. Return
+True if it is valid:
+    - every opening bracket is closed by a bracket of the same type,
+    - brackets close in the right order (innermost first),
+    - every closing bracket has a matching opening bracket.
+
+Example 1:
+    Input:  s = "()"
+    Output: True
+
+Example 2:
+    Input:  s = "()[]{}"
+    Output: True
+
+Example 3:
+    Input:  s = "(]"
+    Output: False
+
+Example 4:
+    Input:  s = "([])"
+    Output: True
+
+Example 5:
+    Input:  s = "([)]"
+    Output: False
+
+Constraints:
+    1 <= s.length <= 10^4
+    s consists of brackets '()[]{}' only.
+"""
 
 class Solution:
     def match(self, l, r):
