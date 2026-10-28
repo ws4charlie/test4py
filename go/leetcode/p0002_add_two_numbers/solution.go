@@ -1,4 +1,37 @@
+// Package p0002 solves LeetCode 2. Add Two Numbers (Medium).
 // https://leetcode.com/problems/add-two-numbers/
+//
+// Two non-empty linked lists each hold a non-negative integer, one digit per
+// node, with the digits in reverse order (ones digit first). Return the sum
+// of the two numbers as a linked list in the same reverse order. Neither
+// number has leading zeros, except the number 0 itself.
+//
+// Example 1:
+//
+//	  2 -> 4 -> 3          342
+//	+ 5 -> 6 -> 4        + 465
+//	-------------        -----
+//	  7 -> 0 -> 8          807
+//
+//	Input:  l1 = [2,4,3], l2 = [5,6,4]
+//	Output: [7,0,8]
+//	Explanation: 342 + 465 = 807
+//
+// Example 2:
+//
+//	Input:  l1 = [0], l2 = [0]
+//	Output: [0]
+//
+// Example 3:
+//
+//	Input:  l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+//	Output: [8,9,9,9,0,0,0,1]
+//
+// Constraints:
+//
+//	Each list has 1 to 100 nodes.
+//	0 <= Node.val <= 9
+//	The numbers have no leading zeros, except the number 0 itself.
 package p0002
 
 import "github.com/ws4charlie/test4py/go/internal/linkedlist"

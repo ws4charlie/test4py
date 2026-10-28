@@ -1,4 +1,36 @@
+// Package p0017 solves LeetCode 17. Letter Combinations of a Phone Number (Medium).
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+//
+// Given a string of digits 2-9, return every letter string they could spell
+// on a phone keypad, in any order. Digit 1 maps to no letters.
+//
+//	+-------+-------+-------+
+//	|   1   |   2   |   3   |
+//	|       |  abc  |  def  |
+//	+-------+-------+-------+
+//	|   4   |   5   |   6   |
+//	|  ghi  |  jkl  |  mno  |
+//	+-------+-------+-------+
+//	|   7   |   8   |   9   |
+//	| pqrs  |  tuv  | wxyz  |
+//	+-------+-------+-------+
+//	|   *   |   0   |   #   |
+//	+-------+-------+-------+
+//
+// Example 1:
+//
+//	Input:  digits = "23"
+//	Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+//
+// Example 2:
+//
+//	Input:  digits = "2"
+//	Output: ["a","b","c"]
+//
+// Constraints:
+//
+//	digits.length <= 4
+//	digits[i] is a digit in '2'-'9'.
 package p0017
 
 var letters = map[byte]string{
