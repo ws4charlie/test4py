@@ -9,6 +9,7 @@ python/
   misc/       interview questions and scratch code
 go/
   leetcode/   pNNNN_<slug>/solution.go + solution_test.go (one package per problem)
+  basics/     same topics as python/basics, one package each
   internal/   shared helpers (e.g. linkedlist.ListNode)
 ```
 
@@ -57,8 +58,8 @@ Run the Go tests: `cd go && go test ./...`
 
 | Topic | Python | Go |
 |-------|--------|----|
-| Sorting (bubble, insertion, selection, merge, heap, quick) and shuffling | [sort.py](python/basics/sort.py) | |
-| Binary heap | [heap.py](python/basics/heap.py) | |
+| Sorting (bubble, insertion, selection, merge, heap, quick) and shuffling | [sort.py](python/basics/sort.py) | [go](go/basics/sorting/sorting.go) |
+| Binary heap | [heap.py](python/basics/heap.py) | [go](go/basics/heap/heap.go) |
 | Binary tree traversal (recursive and iterative) | [binary_tree.py](python/basics/binary_tree.py) | |
 | Graph DFS / BFS | [graph.py](python/basics/graph.py) | |
 | Fibonacci (recursion, memoization, bottom-up) | [fibonacci.py](python/basics/fibonacci.py) | |
