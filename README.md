@@ -43,15 +43,15 @@ Run the Go tests: `cd go && go test ./...`
 | 36   | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | hash | [py](python/leetcode/p0036_valid_sudoku.py) | [go](go/leetcode/p0036_valid_sudoku/solution.go) |
 | 38   | [Count and Say](https://leetcode.com/problems/count-and-say/) | string, recursion | [py](python/leetcode/p0038_count_and_say.py) | |
 | 41   | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | array | [py](python/leetcode/p0041_first_missing_positive.py) | |
-| 45   | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | greedy, DP | [greedy](python/leetcode/p0045_jump_game_ii.py), [top-down](python/leetcode/p0045_jump_game_ii_topdown.py) | |
+| 45   | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | greedy, DP | [greedy](python/leetcode/p0045_jump_game_ii.py), [top-down](python/leetcode/p0045_jump_game_ii_topdown.py) | [go](go/leetcode/p0045_jump_game_ii/solution.go) |
 | 48   | [Rotate Image](https://leetcode.com/problems/rotate-image/) | matrix | [py](python/leetcode/p0048_rotate_image.py) | [go](go/leetcode/p0048_rotate_image/solution.go) |
 | 49   | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | hash, sort | [py](python/leetcode/p0049_group_anagrams.py) | |
-| 53   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | DP, Kadane | [py](python/leetcode/p0053_maximum_subarray.py) | |
+| 53   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | DP, Kadane | [py](python/leetcode/p0053_maximum_subarray.py) | [go](go/leetcode/p0053_maximum_subarray/solution.go) |
 | 54   | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | matrix, simulation | [py](python/leetcode/p0054_spiral_matrix.py) | [go](go/leetcode/p0054_spiral_matrix/solution.go) |
-| 55   | [Jump Game](https://leetcode.com/problems/jump-game/) | greedy, DP | [py](python/leetcode/p0055_jump_game.py) | |
+| 55   | [Jump Game](https://leetcode.com/problems/jump-game/) | greedy, DP | [py](python/leetcode/p0055_jump_game.py) | [go](go/leetcode/p0055_jump_game/solution.go) |
 | 168  | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | math | [py](python/leetcode/p0168_excel_sheet_column_title.py) | |
 | 588  | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/) | design, trie | [py](python/leetcode/p0588_design_in_memory_file_system.py) | |
-| 1306 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | DFS, BFS | [py](python/leetcode/p1306_jump_game_iii.py) | |
+| 1306 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | DFS, BFS | [py](python/leetcode/p1306_jump_game_iii.py) | [go](go/leetcode/p1306_jump_game_iii/solution.go) |
 
 ## Basics
 
