@@ -1,0 +1,44 @@
+# https://leetcode.com/problems/invert-binary-tree/
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def build(vals):
+    """Build a tree from LeetCode level order, None for a missing node."""
+    if not vals or vals[0] is None:
+        return None
+    root = TreeNode(vals[0])
+    queue, i = [root], 1
+    while queue and i < len(vals):
+        node = queue.pop(0)
+        for side in ("left", "right"):
+            if i < len(vals) and vals[i] is not None:
+                child = TreeNode(vals[i])
+                setattr(node, side, child)
+                queue.append(child)
+            i += 1
+    return root
+
+def level_order(root):
+    out, queue = [], [root] if root else []
+    while queue:
+        node = queue.pop(0)
+        out.append(node.val)
+        queue += [c for c in (node.left, node.right) if c]
+    return out
+
+class Solution:
+    def invertTree(self, root):
+        if root:
+            root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        return root
+
+if __name__ == "__main__":
+    sln = Solution()
+    assert level_order(sln.invertTree(build([4, 2, 7, 1, 3, 6, 9]))) == [4, 7, 2, 9, 6, 3, 1]
+    assert level_order(sln.invertTree(build([2, 1, 3]))) == [2, 3, 1]
+    assert sln.invertTree(build([])) is None
+    print("ok")
