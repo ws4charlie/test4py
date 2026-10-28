@@ -1,3 +1,5 @@
+import heapq
+from typing import List
 # https://leetcode.com/problems/first-missing-positive/
 
 class Solution_1:
@@ -36,7 +38,7 @@ class Solution_2:
         return res
 
 if __name__ == "__main__":
-    sln = Solution()
+    sln = Solution_1()
     nums = [0,2,2,1,1]
     res = sln.firstMissingPositive(nums)
     print(res)

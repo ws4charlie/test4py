@@ -26,7 +26,7 @@ class Solution:
             res += row
         return res
 
-if __file__ == "__main__":
+if __name__ == "__main__":
     sln = Solution()
     res = sln.convert("PAYPALISHIRING", 3)
     print(res)

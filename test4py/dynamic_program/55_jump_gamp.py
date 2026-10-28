@@ -1,3 +1,4 @@
+from typing import List
 
 # https://leetcode.com/problems/jump-game/
 
@@ -123,8 +124,8 @@ class Solution_backtrace_jump_over_zeros:
         return self.back_trace(nums, 0)
    
 if __name__ == "__main__":
-    sln1 = Solution_1();
-    sln2 = Solution_2();
+    sln1 = Solution_Greedy()
+    sln2 = Solution_Bottomup()
     nums = [2,3,1,1,4]
     res1 = sln1.canJump(nums)
     res2 = sln2.canJump(nums)

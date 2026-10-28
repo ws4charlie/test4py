@@ -19,6 +19,6 @@ class Solution:
         return lmax
 
 if __name__ == '__main__':
-    sln = Solution2()
+    sln = Solution()
     res = sln.lengthOfLongestSubstring("pwwkew")
     print(res)

@@ -12,7 +12,7 @@
 # fullstack
 # backend
 class Solution:
-    def twoSum(nums, target):
+    def twoSum(self, nums, target):
         res = []#list
         seen = {}#map
         

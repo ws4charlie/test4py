@@ -1,3 +1,4 @@
+from typing import List
 
 class Solution_Topdown:
     def minJump(self, nums, i, mem):
@@ -28,4 +29,4 @@ class Solution_Topdown:
 if __name__ == "__main__":
     sln = Solution_Topdown()
     nums = [2,3,1,1,4]
-    res = sln.minJump(nums)
+    res = sln.jump(nums)

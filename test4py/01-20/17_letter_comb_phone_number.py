@@ -1,3 +1,4 @@
+from typing import List
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
 class Solution_recursive:
@@ -56,8 +57,8 @@ class Solution_loop:
         return res
 
 if __name__ == "__main__":
-    sln1 = Solution17Solution_recursive()
-    sln2 = Solution17Solution_recursive()
+    sln1 = Solution_recursive()
+    sln2 = Solution_loop()
     res1 = sln1.letterCombinations('23')
     res2 = sln2.letterCombinations('23')
     print(res1)
