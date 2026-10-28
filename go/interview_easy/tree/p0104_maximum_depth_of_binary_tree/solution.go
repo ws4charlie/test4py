@@ -1,4 +1,29 @@
+// Package p0104 solves LeetCode 104. Maximum Depth of Binary Tree (Easy).
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/
+//
+// Return the maximum depth of a binary tree: the number of nodes on the
+// longest path from the root down to a leaf.
+//
+// Example 1:
+//
+//	Input:  root = [3,9,20,null,null,15,7]
+//	Output: 3
+//
+//	        3
+//	       / \
+//	      9   20
+//	         /  \
+//	        15   7
+//
+// Example 2:
+//
+//	Input:  root = [1,null,2]
+//	Output: 2
+//
+// Constraints:
+//
+//	0 <= number of nodes <= 10^4
+//	-100 <= Node.val <= 100
 package p0104
 
 import "github.com/ws4charlie/test4py/go/internal/bintree"
