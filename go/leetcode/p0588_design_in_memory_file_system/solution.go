@@ -1,4 +1,44 @@
+// Package p0588 solves LeetCode 588. Design In-Memory File System (Hard, LeetCode Premium).
 // https://leetcode.com/problems/design-in-memory-file-system/
+//
+// Design an in-memory file system with this API:
+//
+//	FileSystem()                    start with an empty file system.
+//	ls(path)                        if path is a file, return [its name];
+//	                                if it's a directory, return the names
+//	                                inside it, sorted lexicographically.
+//	mkdir(path)                     create the directory path, plus any
+//	                                missing parent directories.
+//	addContentToFile(path, content) create the file if it doesn't exist,
+//	                                otherwise append content to it.
+//	readContentFromFile(path)       return the file's content.
+//
+// Example:
+//
+//	Input:
+//	    ["FileSystem","ls","mkdir","addContentToFile","ls","readContentFromFile"]
+//	    [[],["/"],["/a/b/c"],["/a/b/c/d","hello"],["/"],["/a/b/c/d"]]
+//	Output:
+//	    [null,[],null,null,["a"],"hello"]
+//
+//	After the calls the tree looks like this:
+//
+//	    /
+//	    `-- a/
+//	        `-- b/
+//	            `-- c/
+//	                `-- d        file, content "hello"
+//
+// Constraints:
+//
+//	1 <= path.length, filePath.length <= 100
+//	Paths are absolute: they start with "/" and don't end with "/",
+//	except the root "/" itself.
+//	Directory and file names are lowercase letters; names in the same
+//	directory are unique.
+//	readContentFromFile and ls are only called on paths that exist.
+//	1 <= content.length <= 50
+//	At most 300 calls in total.
 package p0588
 
 import (

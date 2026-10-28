@@ -1,4 +1,24 @@
+// Package p0005 solves LeetCode 5. Longest Palindromic Substring (Medium).
 // https://leetcode.com/problems/longest-palindromic-substring/
+//
+// Given a string s, return its longest substring that reads the same
+// forwards and backwards.
+//
+// Example 1:
+//
+//	Input:  s = "babad"
+//	Output: "bab"
+//	Explanation: "aba" is also a valid answer.
+//
+// Example 2:
+//
+//	Input:  s = "cbbd"
+//	Output: "bb"
+//
+// Constraints:
+//
+//	1 <= s.length <= 1000
+//	s consists of digits and English letters only.
 package p0005
 
 // LongestPalindrome expands around every center: one char (odd length)
