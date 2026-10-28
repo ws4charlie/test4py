@@ -1,4 +1,29 @@
-# https://leetcode.com/problems/valid-palindrome/
+"""
+125. Valid Palindrome  (Easy)
+https://leetcode.com/problems/valid-palindrome/
+
+Lowercase s and drop every character that isn't a letter or digit. Return
+True if what's left reads the same forwards and backwards.
+
+Example 1:
+    Input:  s = "A man, a plan, a canal: Panama"
+    Output: True
+    Explanation: "amanaplanacanalpanama" is a palindrome.
+
+Example 2:
+    Input:  s = "race a car"
+    Output: False
+    Explanation: "raceacar" is not a palindrome.
+
+Example 3:
+    Input:  s = " "
+    Output: True
+    Explanation: nothing is left, and the empty string is a palindrome.
+
+Constraints:
+    1 <= s.length <= 2 * 10^5
+    s consists of printable ASCII characters.
+"""
 
 class Solution:
     def isPalindrome(self, s):

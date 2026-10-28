@@ -1,4 +1,37 @@
-# https://leetcode.com/problems/symmetric-tree/
+r"""
+101. Symmetric Tree  (Easy)
+https://leetcode.com/problems/symmetric-tree/
+
+Return True if a binary tree is a mirror image of itself around its
+center.
+
+Example 1:
+    Input:  root = [1,2,2,3,4,4,3]
+    Output: True
+
+              1
+             / \
+            /   \
+           2     2
+          / \   / \
+         3   4 4   3
+
+Example 2:
+    Input:  root = [1,2,2,null,3,null,3]
+    Output: False
+
+            1
+           / \
+          2   2
+           \   \
+            3   3
+
+Constraints:
+    1 <= number of nodes <= 1000
+    -100 <= Node.val <= 100
+
+Follow-up: can you solve it both recursively and iteratively?
+"""
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):

@@ -1,4 +1,28 @@
-# https://leetcode.com/problems/palindrome-linked-list/
+"""
+234. Palindrome Linked List  (Easy)
+https://leetcode.com/problems/palindrome-linked-list/
+
+Return True if the values of a singly linked list read the same forwards
+and backwards.
+
+Example 1:
+    Input:  head = [1,2,2,1]
+    Output: True
+
+        1 -> 2 -> 2 -> 1
+
+Example 2:
+    Input:  head = [1,2]
+    Output: False
+
+        1 -> 2
+
+Constraints:
+    1 <= number of nodes <= 10^5
+    0 <= Node.val <= 9
+
+Follow-up: can you do it in O(n) time and O(1) space?
+"""
 
 class ListNode:
     def __init__(self, x):
