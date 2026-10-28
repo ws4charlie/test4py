@@ -1,3 +1,29 @@
+"""
+9. Palindrome Number  (Easy)
+https://leetcode.com/problems/palindrome-number/
+
+Given an integer x, return True if it reads the same forwards and
+backwards.
+
+Example 1:
+    Input:  x = 121
+    Output: True
+
+Example 2:
+    Input:  x = -121
+    Output: False
+    Explanation: backwards it reads "121-".
+
+Example 3:
+    Input:  x = 10
+    Output: False
+    Explanation: backwards it reads "01".
+
+Constraints:
+    -2^31 <= x <= 2^31 - 1
+
+Follow-up: can you do it without converting x to a string?
+"""
 
 class Solution:
     def isPalindrome(self, x: 'int') -> 'bool':

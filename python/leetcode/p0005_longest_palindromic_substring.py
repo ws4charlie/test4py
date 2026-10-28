@@ -1,17 +1,23 @@
+"""
+5. Longest Palindromic Substring  (Medium)
+https://leetcode.com/problems/longest-palindromic-substring/
 
-# https://leetcode.com/problems/longest-palindromic-substring/
+Given a string s, return its longest substring that reads the same
+forwards and backwards.
 
-#Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+Example 1:
+    Input:  s = "babad"
+    Output: "bab"
+    Explanation: "aba" is also a valid answer.
 
-#Example 1:
-#Input: "babad"
-#Output: "bab"
-#Note: "aba" is also a valid answer.
+Example 2:
+    Input:  s = "cbbd"
+    Output: "bb"
 
-#Example 2:
-#Input: "cbbd"
-#Output: "bb"
-
+Constraints:
+    1 <= s.length <= 1000
+    s consists of digits and English letters only.
+"""
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:

@@ -1,6 +1,23 @@
-from typing import List
+"""
+22. Generate Parentheses  (Medium)
+https://leetcode.com/problems/generate-parentheses/
 
-# https://leetcode.com/problems/generate-parentheses/
+Given n pairs of parentheses, return every well-formed combination, in
+any order.
+
+Example 1:
+    Input:  n = 3
+    Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+Example 2:
+    Input:  n = 1
+    Output: ["()"]
+
+Constraints:
+    1 <= n <= 8
+"""
+
+from typing import List
 
 class Solution22:
     def back_trace(self, res, comb, _open, close, n):
