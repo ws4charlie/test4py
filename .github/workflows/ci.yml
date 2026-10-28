@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: go
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go/go.mod
+          cache: false # no go.sum, nothing to cache
+      - name: gofmt
+        run: |
+          unformatted=$(gofmt -l .)
+          if [ -n "$unformatted" ]; then
+            echo "Files need gofmt:"; echo "$unformatted"; exit 1
+          fi
+      - name: go vet
+        run: go vet ./...
+      - name: go test
+        run: go test ./...
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run every script
+        # Run from a temp dir so scripts that write files (588) don't touch
+        # the checkout.
+        run: |
+          failed=0
+          cd "$RUNNER_TEMP"
+          for f in $(cd "$GITHUB_WORKSPACE" && git ls-files 'python/*.py'); do
+            echo "::group::$f"
+            if ! python "$GITHUB_WORKSPACE/$f" </dev/null; then
+              echo "::error file=$f::script exited non-zero"
+              failed=1
+            fi
+            echo "::endgroup::"
+          done
+          exit $failed
