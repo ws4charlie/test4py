@@ -5,10 +5,12 @@ Algorithm practice in Python and Go. Both languages use the same directory names
 ```
 python/
   leetcode/   pNNNN_<slug>.py
+  interview_easy/<category>/  20 most-asked Easy problems
   basics/     sorting, heap, tree traversal, graph, ...
   misc/       interview questions and scratch code
 go/
   leetcode/   pNNNN_<slug>/solution.go + solution_test.go (one package per problem)
+  interview_easy/<category>/pNNNN_<slug>/
   basics/     same topics as python/basics, one package each
   misc/       finished versions of the misc problems
   internal/   shared helpers (e.g. linkedlist.ListNode)
@@ -54,6 +56,24 @@ Run the Go tests: `cd go && go test ./...`
 | 168  | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | math | [py](python/leetcode/p0168_excel_sheet_column_title.py) | [go](go/leetcode/p0168_excel_sheet_column_title/solution.go) |
 | 588  | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/) | design, trie | [py](python/leetcode/p0588_design_in_memory_file_system.py) | [go](go/leetcode/p0588_design_in_memory_file_system/solution.go) |
 | 1306 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | DFS, BFS | [py](python/leetcode/p1306_jump_game_iii.py) | [go](go/leetcode/p1306_jump_game_iii/solution.go) |
+
+## Interview Easy
+
+The 20 most frequently asked LeetCode Easy problems, grouped by category under `python/interview_easy/<category>/` and `go/interview_easy/<category>/`. Kept separate from the problems above.
+
+| Category | # | Problem | Python | Go |
+|----------|---|---------|--------|----|
+| Array / Hash | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [py](python/interview_easy/array_hash/p0121_best_time_to_buy_and_sell_stock.py) | [go](go/interview_easy/array_hash/p0121_best_time_to_buy_and_sell_stock/solution.go) |
+| Array / Hash | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | [py](python/interview_easy/array_hash/p0169_majority_element.py) | [go](go/interview_easy/array_hash/p0169_majority_element/solution.go) |
+| Array / Hash | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [py](python/interview_easy/array_hash/p0217_contains_duplicate.py) | [go](go/interview_easy/array_hash/p0217_contains_duplicate/solution.go) |
+| Array / Hash | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [py](python/interview_easy/array_hash/p0242_valid_anagram.py) | [go](go/interview_easy/array_hash/p0242_valid_anagram/solution.go) |
+| Two Pointers | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [py](python/interview_easy/two_pointers/p0088_merge_sorted_array.py) | [go](go/interview_easy/two_pointers/p0088_merge_sorted_array/solution.go) |
+| Two Pointers | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [py](python/interview_easy/two_pointers/p0125_valid_palindrome.py) | [go](go/interview_easy/two_pointers/p0125_valid_palindrome/solution.go) |
+| Two Pointers | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [py](python/interview_easy/two_pointers/p0283_move_zeroes.py) | [go](go/interview_easy/two_pointers/p0283_move_zeroes/solution.go) |
+| Linked List | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [py](python/interview_easy/linked_list/p0141_linked_list_cycle.py) | [go](go/interview_easy/linked_list/p0141_linked_list_cycle/solution.go) |
+| Linked List | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [py](python/interview_easy/linked_list/p0206_reverse_linked_list.py) | [go](go/interview_easy/linked_list/p0206_reverse_linked_list/solution.go) |
+| Linked List | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [py](python/interview_easy/linked_list/p0234_palindrome_linked_list.py) | [go](go/interview_easy/linked_list/p0234_palindrome_linked_list/solution.go) |
+| Stack / Queue | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [py](python/interview_easy/stack_queue/p0232_implement_queue_using_stacks.py) | [go](go/interview_easy/stack_queue/p0232_implement_queue_using_stacks/solution.go) |
 
 ## Basics
 
