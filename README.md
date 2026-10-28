@@ -60,8 +60,8 @@ Run the Go tests: `cd go && go test ./...`
 |-------|--------|----|
 | Sorting (bubble, insertion, selection, merge, heap, quick) and shuffling | [sort.py](python/basics/sort.py) | [go](go/basics/sorting/sorting.go) |
 | Binary heap | [heap.py](python/basics/heap.py) | [go](go/basics/heap/heap.go) |
-| Binary tree traversal (recursive and iterative) | [binary_tree.py](python/basics/binary_tree.py) | |
-| Graph DFS / BFS | [graph.py](python/basics/graph.py) | |
+| Binary tree traversal (recursive and iterative) | [binary_tree.py](python/basics/binary_tree.py) | [go](go/basics/binarytree/binarytree.go) |
+| Graph DFS / BFS | [graph.py](python/basics/graph.py) | [go](go/basics/graph/graph.go) |
 | Fibonacci (recursion, memoization, bottom-up) | [fibonacci.py](python/basics/fibonacci.py) | |
 | Longest increasing subsequence | [longest_increasing_subsequence.py](python/basics/longest_increasing_subsequence.py) | |
 | Tower of Hanoi | [hanoi.py](python/basics/hanoi.py) | |
