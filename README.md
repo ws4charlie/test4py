@@ -13,7 +13,7 @@ go/
   interview_easy/<category>/pNNNN_<slug>/
   basics/     same topics as python/basics, one package each
   misc/       finished versions of the misc problems
-  internal/   shared helpers (e.g. linkedlist.ListNode)
+  internal/   shared helpers (linkedlist.ListNode, bintree.TreeNode)
 ```
 
 Run the Go tests: `cd go && go test ./...`
@@ -74,6 +74,15 @@ The 20 most frequently asked LeetCode Easy problems, grouped by category under `
 | Linked List | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [py](python/interview_easy/linked_list/p0206_reverse_linked_list.py) | [go](go/interview_easy/linked_list/p0206_reverse_linked_list/solution.go) |
 | Linked List | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [py](python/interview_easy/linked_list/p0234_palindrome_linked_list.py) | [go](go/interview_easy/linked_list/p0234_palindrome_linked_list/solution.go) |
 | Stack / Queue | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [py](python/interview_easy/stack_queue/p0232_implement_queue_using_stacks.py) | [go](go/interview_easy/stack_queue/p0232_implement_queue_using_stacks/solution.go) |
+| Binary Search | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | [py](python/interview_easy/binary_search/p0278_first_bad_version.py) | [go](go/interview_easy/binary_search/p0278_first_bad_version/solution.go) |
+| Binary Search | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [py](python/interview_easy/binary_search/p0704_binary_search.py) | [go](go/interview_easy/binary_search/p0704_binary_search/solution.go) |
+| Tree | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [py](python/interview_easy/tree/p0101_symmetric_tree.py) | [go](go/interview_easy/tree/p0101_symmetric_tree/solution.go) |
+| Tree | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [py](python/interview_easy/tree/p0104_maximum_depth_of_binary_tree.py) | [go](go/interview_easy/tree/p0104_maximum_depth_of_binary_tree/solution.go) |
+| Tree | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [py](python/interview_easy/tree/p0226_invert_binary_tree.py) | [go](go/interview_easy/tree/p0226_invert_binary_tree/solution.go) |
+| Tree | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [py](python/interview_easy/tree/p0543_diameter_of_binary_tree.py) | [go](go/interview_easy/tree/p0543_diameter_of_binary_tree/solution.go) |
+| Dynamic Programming | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [py](python/interview_easy/dp/p0070_climbing_stairs.py) | [go](go/interview_easy/dp/p0070_climbing_stairs/solution.go) |
+| Bit Manipulation | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [py](python/interview_easy/bit/p0136_single_number.py) | [go](go/interview_easy/bit/p0136_single_number/solution.go) |
+| Bit Manipulation | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [py](python/interview_easy/bit/p0268_missing_number.py) | [go](go/interview_easy/bit/p0268_missing_number/solution.go) |
 
 ## Basics
 
