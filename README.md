@@ -10,6 +10,7 @@ python/
 go/
   leetcode/   pNNNN_<slug>/solution.go + solution_test.go (one package per problem)
   basics/     same topics as python/basics, one package each
+  misc/       finished versions of the misc problems
   internal/   shared helpers (e.g. linkedlist.ListNode)
 ```
 
@@ -62,13 +63,13 @@ Run the Go tests: `cd go && go test ./...`
 | Binary heap | [heap.py](python/basics/heap.py) | [go](go/basics/heap/heap.go) |
 | Binary tree traversal (recursive and iterative) | [binary_tree.py](python/basics/binary_tree.py) | [go](go/basics/binarytree/binarytree.go) |
 | Graph DFS / BFS | [graph.py](python/basics/graph.py) | [go](go/basics/graph/graph.go) |
-| Fibonacci (recursion, memoization, bottom-up) | [fibonacci.py](python/basics/fibonacci.py) | |
-| Longest increasing subsequence | [longest_increasing_subsequence.py](python/basics/longest_increasing_subsequence.py) | |
-| Tower of Hanoi | [hanoi.py](python/basics/hanoi.py) | |
-| Find second largest | [find_second_largest.py](python/basics/find_second_largest.py) | |
+| Fibonacci (recursion, memoization, bottom-up) | [fibonacci.py](python/basics/fibonacci.py) | [go](go/basics/fibonacci/fibonacci.go) |
+| Longest increasing subsequence | [longest_increasing_subsequence.py](python/basics/longest_increasing_subsequence.py) | [go](go/basics/lis/lis.go) |
+| Tower of Hanoi | [hanoi.py](python/basics/hanoi.py) | [go](go/basics/hanoi/hanoi.go) |
+| Find second largest | [find_second_largest.py](python/basics/find_second_largest.py) | [go](go/basics/secondlargest/secondlargest.go) |
 
 ## Misc
 
 - [order_book.py](python/misc/order_book.py): order book matching (unfinished)
-- [coffee_machine.py](python/misc/coffee_machine.py): best place for an office coffee machine (unfinished)
+- coffee machine placement (minimize total Manhattan distance to developers): [py](python/misc/coffee_machine.py) (unfinished), [go](go/misc/coffeemachine/coffeemachine.go) (median per axis)
 - [scratch.py](python/misc/scratch.py): scratch code
